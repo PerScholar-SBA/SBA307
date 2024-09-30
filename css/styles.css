@@ -1,0 +1,66 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  height: 100%;
+}
+
+/* Animated Heading */
+.animated-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff6600;
+  text-align: center;
+  letter-spacing: 5px;
+  animation: animateText 5s ease-in-out infinite;
+}
+
+/* Keyframes for Animation */
+@keyframes animateText {
+  0% { color: #1c1816; transform: scale(1); opacity: 0; }
+  25% { color: #0066ff; transform: scale(1.2); opacity: 1; }
+  50% { color: #bec2be; transform: scale(1); opacity: 0.8; }
+  75% { color: #ff0066; transform: scale(1.1); opacity: 1; }
+  100% { color: #ff6600; transform: scale(1); opacity: 0; }
+}
+
+/* Section */
+section.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+section.main:hover {
+  /* transform: scale(1.05); */
+}
+
+.mainImg {
+  border-radius: 15px;
+ 
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

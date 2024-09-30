@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Volunteers - Home"</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png"alt="Volunteering Organization Logo" class="pulse"> <!-- Add pulse class if using pulse animation -->
+        </div>
+        <nav>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+               <li><a href="projects.html">projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <h1 class="animated-heading">Where Sky is the Limit</h1>
+        <p style="width: 90%;">'Volunteers do not necessarily have the time; they just have the heart.' </p>
+        <p style="width: 90%;">'Elizabeth Andrew'</p>
+        <img class="mainImg" src="../img/sky.jpg" alt="Placeholder Image" style="width: 20%;">
+        
+     </section>
+    <footer>
+        <p>&copy; 2024 Volunteering </p>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menu-icon").click(function(){
+                $("#nav-links").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
